@@ -1,9 +1,14 @@
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const Hero = () => {
+
+    const {me} = useContext(AuthContext)
     return (
         <div>
-            <img src="https://iili.io/JrH2f3u.jpg" alt="" />
+           <h1>{me}</h1>
+          
         </div>
     );
 };

@@ -46,13 +46,30 @@ const Nav = () => {
         >
           About
         </NavLink>
+
+        <NavLink
+          to={"/addplace"}
+          className={({ isActive }) =>
+            isActive
+              ? "text-red-500 font-bold text-[16px]"
+              : " text-black font-bold text-[16px]"
+          }
+        >
+          Add Place
+        </NavLink>
+
+
+
+
+
+
       </div>
     </>
   );
 
   return (
-    <div className="container mx-auto ">
-      <div className="navbar bg-transparent fixed z-[10]">
+    <div className="container mx-auto">
+      <div className="navbar bg-transparent z-[10]">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -84,7 +101,7 @@ const Nav = () => {
           <ul className="menu menu-horizontal px-1">{navLink}</ul>
         </div>
         <div className="navbar-end">
-          
+          <Link to={"/singin"}>  <button className="btn  btn-ghost">Login</button></Link>
         </div>
       </div>
     </div>

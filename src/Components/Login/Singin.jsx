@@ -44,7 +44,7 @@ const Singin = () => {
                 </Link>
               </div>
              
-              <input type="submit" value="Login" className="btn bg-blue-500" />
+              <input type="submit" value="Singin" className="btn bg-blue-500" />
              
             </form>
            

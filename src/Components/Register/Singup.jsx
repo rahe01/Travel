@@ -59,7 +59,7 @@ const Singup = () => {
                 
               </div>
              
-              <input type="submit" value="Login" className="btn bg-blue-500" />
+              <input type="submit" value="Singup" className="btn bg-blue-500" />
              
             </form>
            
